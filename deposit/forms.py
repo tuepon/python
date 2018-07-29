@@ -1,9 +1,10 @@
 from django import forms
-from .models import Account
+from .models import Deposit
 
 
-class AccountCreateForm(forms.ModelForm):
+class DepositCreateForm(forms.ModelForm):
 
     class Meta:
-        model = Account
-        fields = '__all__'
+        model = Deposit
+#        fields = '__all__'
+        fields = ('sent', 'date')

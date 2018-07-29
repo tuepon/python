@@ -1,0 +1,22 @@
+{% extends 'deposit/base.html' %}
+
+{% block content %}
+<h1>積み立てアプリ</h1>
+
+<table class="table">
+ <thead>
+   <tr>
+     <th>入金額</th>
+     <th>残高</th>
+   </tr>
+  </thead>
+  <tbody>
+   {% for deposit in deposit_list %}
+   <tr>
+    <td>{{ deposit.sent }}</td>
+    <td>{{ deposit.balance }}</td>
+   </tr>
+   {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
