@@ -7,4 +7,4 @@ class DepositCreateForm(forms.ModelForm):
     class Meta:
         model = Deposit
 #        fields = '__all__'
-        fields = ('sent', 'date')
+        fields = ('date')
